@@ -1,14 +1,12 @@
 package com.example.DAO.repository;
 
 import jakarta.persistence.EntityManager;
-import jakarta.persistence.PersistenceContext;
 import org.springframework.stereotype.Repository;
 
 import java.util.List;
 
 @Repository
 public class OrderRepository {
-    @PersistenceContext
     private final EntityManager entityManager;
 
     public OrderRepository(EntityManager entityManager) {
