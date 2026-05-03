@@ -12,6 +12,6 @@ import lombok.NoArgsConstructor;
 @Data
 @Embeddable
 public class Contact {
-    private String phone_number;
+    private String phoneNumber;
     private String email;
 }

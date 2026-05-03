@@ -36,7 +36,7 @@ public class DaoApplication implements CommandLineRunner {
                 .surname("test")
                 .age(30)
                 .contact(Contact.builder()
-                        .phone_number("12345")
+                        .phoneNumber("12345")
                         .email("alex@mail.com")
                         .build())
                 .build();
@@ -54,9 +54,9 @@ public class DaoApplication implements CommandLineRunner {
         List<String> products = orderService.getProductsByName(searchName);
 
         if (products.isEmpty()) {
-            System.out.println("Результат: Для пользователя " + searchName + " заказов не найдено.");
+            System.out.println("Для пользователя " + searchName + " заказов не найдено.");
         } else {
-            System.out.println("Результат: Товары пользователя " + searchName + ": " + products);
+            System.out.println("Товары пользователя " + searchName + ": " + products);
         }
     }
 }
