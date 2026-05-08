@@ -19,7 +19,7 @@ create table if not exists demojoin.orders
 (
     id           bigserial primary key,
     date         date not null,
-    customer_id  bigint references demojoin.customers (id), -- ИСПРАВЛЕНО: было int, стало bigint
+    customer_id  bigint references demojoin.customers (id),
     product_name varchar(50),
     amount       int
 );

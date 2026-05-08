@@ -14,7 +14,7 @@ create table if not exists demojoin.ORDERS
 (
     id           bigserial primary key,
     date         date not null,
-    customer_id  int references demojoin.CUSTOMERS (id),
+    customer_id  bigint references demojoin.customers (id),
     product_name varchar(50),
     amount       int
 );

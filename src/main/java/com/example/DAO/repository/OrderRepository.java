@@ -14,7 +14,7 @@ public class OrderRepository {
     }
 
     public List<String> getProductName(String name) {
-        String jpql = "SELECT o.productName FROM Order o " +
+        String jpql = "SELECT o.productName FROM Orders o " +
                 "JOIN o.customer c " +
                 "WHERE LOWER(c.name) = LOWER(:name)";
 

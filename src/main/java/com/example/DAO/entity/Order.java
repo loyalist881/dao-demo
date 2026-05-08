@@ -1,18 +1,16 @@
 package com.example.DAO.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 import java.time.LocalDate;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
-@Entity
+@Getter
+@Setter
+@Entity(name = "Orders")
 @Table(name = "orders", schema = "demojoin")
 public class Order {
     @Id
