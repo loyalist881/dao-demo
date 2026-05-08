@@ -1,17 +1,15 @@
 package com.example.DAO.entity;
 
 import jakarta.persistence.*;
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
 @Builder
 @AllArgsConstructor
 @NoArgsConstructor
-@Data
+@Getter
+@Setter
 @Entity
-@Table(name = "customers")
+@Table(name = "customers", schema = "demojoin")
 public class Customer {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
